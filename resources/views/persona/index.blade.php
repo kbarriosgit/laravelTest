@@ -242,7 +242,7 @@
                     </div>
                     <button type="submit"
                         class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                        id="btnAgregar">
+                        id="btnEditar">
                         Guardar
                     </button>
                 </form>
@@ -419,7 +419,6 @@
                 .catch(error => console.error('Error al obtener el desglose de fechas:', error));
         });
     });
-
 
     document.querySelectorAll('[data-modal-target="calculate-dates-modal"]').forEach(button => {
         button.addEventListener('click', function() {

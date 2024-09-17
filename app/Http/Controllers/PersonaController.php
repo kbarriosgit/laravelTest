@@ -46,6 +46,7 @@ class PersonaController extends Controller
 
     public function update(Request $request, string $id)
     {
+        // dd($request);
         $persona = Persona::where('id', $id)->first();
         $persona->nombre = $request->nombre;
         $persona->edad = $request->edad;

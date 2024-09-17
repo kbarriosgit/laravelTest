@@ -44,7 +44,6 @@ class UsuarioController extends Controller
 
     public function update(Request $request, string $id)
     {
-        dd($request);
         $isAdmin = $request->is_admin == 'true'?true:false; 
         $usuario = User::where('id', $id)->first();
         $usuario->nombre = $request->nombre;

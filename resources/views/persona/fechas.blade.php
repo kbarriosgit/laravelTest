@@ -1,5 +1,4 @@
 <!-- resources/views/persona/fechas.blade.php -->
-
 <div class="bg-white p-4 rounded-lg shadow-lg">
     <h3 class="text-lg font-semibold">Desglose de Fechas</h3>
     <div class="p-4 md:p-5">
@@ -14,6 +13,8 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('close-fechas-modal').addEventListener('click', function() {
+            console.log("closefechas");
+
             document.getElementById('fechas-modal-information').classList.add('hidden');
         });
 
